@@ -1,16 +1,34 @@
-import { Client, MessageComponentType } from 'discord.js';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
+import { Client, MessageComponentInteraction, PermissionResolvable } from 'discord.js';
+
+import { GError } from '../structures/GError';
+
+import { ComponentType, ComponentOptions } from '../util/Constants';
 
 export class Component {
     public client: Client;
     public name: string;
-    public type: MessageComponentType;
-    public userRequiredPermissions?: string | Array<string>;
+    public type: ComponentType;
+    public userRequiredPermissions?: Array<PermissionResolvable>;
     private _path: string;
 
-    constructor(client: Client, options: { name: string, type: MessageComponentType, userRequiredPermissions?: string | Array<string> }) {
+    constructor(client: Client, options: ComponentOptions) {
         this.client = client;
+
+        this.validate(options);
+
         this.name = options.name;
-        this.type = options.type;
-        this.userRequiredPermissions = options.userRequiredPermissions;
+        this.type = ComponentType[options.type];
+        this.userRequiredPermissions = options.userRequiredPermissions !== undefined ? Array.isArray(options.userRequiredPermissions) ? options.userRequiredPermissions : [options.userRequiredPermissions] : [];
+    }
+
+    public run(interaction: MessageComponentInteraction, args: Array<string>) {
+        throw new GError('[COMPONENT]',`Component ${this.name} doesn't provide a run method!`);
+    }
+
+    private validate(options: ComponentOptions) {
+        if (typeof options.name !== 'string') throw new GError(`[COMPONENT]`,`Name must be a string`);
+        if (!ComponentType[options.type]) throw new GError(`[COMPONENT ${options.name}]`,`Type must be a valid ComponentType`);
     }
 }

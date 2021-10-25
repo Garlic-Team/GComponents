@@ -12,9 +12,9 @@ import { isClass } from '../util/util';
 export class GComponentsLoader {
     private client: Client;
     private dir: string;
-    private components: Collection<string, object>;
+    private components: Collection<string, Component>;
 
-    constructor(client: Client, components: Collection<string, object>, dir: string) {
+    constructor(client: Client, components: Collection<string, Component>, dir: string) {
         this.client = client;
         this.dir = dir;
         this.components = components;
@@ -34,6 +34,8 @@ export class GComponentsLoader {
             } else if (!['.js', '.ts'].includes(fileType)) { continue; }
 
             let file = await import(path.join(dir, rawFileName));
+            if (file.default) file = file.default;
+            else if (!file.name) file = Object.values(file)[0];
 
             if (isClass(file)) {
                 file = new file(this.client);
