@@ -25,6 +25,8 @@ jobs:
         run: npm run tscbuild
 
       - name: publish
-        run: npm publish --access public
+        run: |
+          npm config set registry https://registry.npmjs.com/
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

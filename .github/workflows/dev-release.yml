@@ -27,6 +27,7 @@ jobs:
       - name: publish
         run: |
           npm version --git-tag-version=false $(jq --raw-output '.version' package.json).$(date +%s)
+          npm config set registry https://registry.npmjs.com/
           npm publish --tag dev || true --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
