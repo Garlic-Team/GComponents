@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Component=void 0;class Component{constructor(client,options){this.client=client;this.name=options.name;this.type=options.type;this.userRequiredPermissions=options.userRequiredPermissions}}exports.Component=Component;

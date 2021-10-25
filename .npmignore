@@ -1,0 +1,11 @@
+# ts
+babel.config.js
+build.js
+src/
+
+# Eslint
+.eslintrc.json
+.eslintignore
+
+# git
+.gitignore
