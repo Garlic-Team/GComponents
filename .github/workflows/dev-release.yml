@@ -27,6 +27,6 @@ jobs:
       - name: publish
         run: |
           npm version --git-tag-version=false $(jq --raw-output '.version' package.json).$(date +%s)
-          npm publish --tag dev || true
+          npm publish --tag dev || true --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
