@@ -9,3 +9,4 @@ src/
 
 # git
 .gitignore
+.github
