@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>GCommands</h1>
+    <h1>GComponents</h1>
   <p>
     <a href="https://www.npmjs.com/package/gcommands"><img src="https://img.shields.io/npm/v/gcommands?maxAge=3600" alt="NPM version" /></a>
     <a href="https://www.npmjs.com/package/gcommands"><img src="https://img.shields.io/npm/dt/gcommands?maxAge=3600" alt="NPM downloads" /></a>
