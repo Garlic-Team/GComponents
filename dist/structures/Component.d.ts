@@ -1,13 +1,12 @@
-import { Client, MessageComponentType } from 'discord.js';
+import { Client, MessageComponentInteraction, PermissionResolvable } from 'discord.js';
+import { ComponentType, ComponentOptions } from '../util/Constants';
 export declare class Component {
     client: Client;
     name: string;
-    type: MessageComponentType;
-    userRequiredPermissions?: string | Array<string>;
+    type: ComponentType;
+    userRequiredPermissions?: Array<PermissionResolvable>;
     private _path;
-    constructor(client: Client, options: {
-        name: string;
-        type: MessageComponentType;
-        userRequiredPermissions?: string | Array<string>;
-    });
+    constructor(client: Client, options: ComponentOptions);
+    run(interaction: MessageComponentInteraction, args: Array<string>): void;
+    private validate;
 }

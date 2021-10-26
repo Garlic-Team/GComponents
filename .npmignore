@@ -1,6 +1,7 @@
 # ts
 babel.config.js
 build.js
+build.bash
 src/
 
 # Eslint
@@ -10,3 +11,6 @@ src/
 # git
 .gitignore
 .github
+
+# Docs
+docs/

@@ -1,11 +1,13 @@
 {
-  "name": "gcomponents",
-  "version": "0.1.0",
-  "description": "Component handler for discord.js",
+  "name": "@gcommands/components",
+  "version": "1.0.0",
+  "description": "Component handler for discord.js and gcommands",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "tscbuild": "tsc --emitDeclarationOnly"
+    "babelbuild": "npx babel --extensions .ts ./src -d ./dist --minified",
+    "tscbuild": "tsc --emitDeclarationOnly",
+    "docsbuild": "typedoc --out docs src/index.ts"
   },
   "keywords": [
     "handler",
@@ -17,17 +19,18 @@
     "discord.js": "^13.2.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.1.0",
-    "@typescript-eslint/parser": "^5.1.0",
-    "eslint": "^8.1.0",
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
     "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^1.0.4",
+    "eslint": "^8.1.0",
     "glob": "^7.2.0",
+    "typedoc": "^0.22.7",
     "typescript": "^4.4.3"
   }
 }
