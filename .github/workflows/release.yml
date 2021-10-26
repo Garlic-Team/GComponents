@@ -25,7 +25,6 @@ jobs:
         run: npm run tscbuild
 
       - name: publish
-        run: |
-          npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
