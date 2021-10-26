@@ -2,7 +2,7 @@ import { Client, MessageComponentInteraction, PermissionResolvable } from 'disco
 import { ComponentType, ComponentOptions } from '../util/Constants';
 export declare class Component {
     client: Client;
-    name: string;
+    name: string | RegExp;
     type: ComponentType;
     userRequiredPermissions?: Array<PermissionResolvable>;
     private _path;

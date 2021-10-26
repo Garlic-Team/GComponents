@@ -11,7 +11,7 @@ export const Events = {
 };
 
 export interface ComponentOptions {
-    name: string;
+    name: string | RegExp;
     type: 'BUTTON' | 'SELECT_MENU';
     userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable> ;
 }
