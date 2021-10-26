@@ -1,2 +1,2 @@
-node build.js
+npm run babelbuild
 npm run tscbuild
