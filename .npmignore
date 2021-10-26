@@ -11,3 +11,6 @@ src/
 # git
 .gitignore
 .github
+
+# Docs
+docs
