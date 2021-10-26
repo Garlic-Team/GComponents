@@ -8,9 +8,12 @@ export declare const Events: {
     COMMAND_NOT_FOUND: string;
 };
 export interface ComponentOptions {
-    name: string;
+    name: string | RegExp;
     type: 'BUTTON' | 'SELECT_MENU';
     userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable>;
+}
+export interface GComponentsOptions {
+    dir: string;
 }
 export declare enum ComponentType {
     BUTTON = "BUTTON",

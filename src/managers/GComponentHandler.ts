@@ -20,10 +20,15 @@ export class GComponentHandler {
             if (!interaction || !interaction.isMessageComponent()) return;
 
             try {
-                const args = interaction.customId.split('-');
+                const regex = new RegExp('[A-Za-z]+');
+                const args = interaction.customId.match(regex);
                 const name = args.shift();
 
-                const component = this.components.get(name);
+                const component = this.components.find(cmp => {
+                    if (typeof cmp.name === 'string') return cmp.name === interaction.customId;
+                    else if (cmp.name instanceof RegExp) return cmp.name.test(interaction.customId);
+                    else return false;
+                }) ?? this.components.get(name);
                 if (!component) return;
 
                 if (component.type === ComponentType.BUTTON && !interaction.isButton()) return;
