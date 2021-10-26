@@ -16,6 +16,10 @@ export interface ComponentOptions {
     userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable> ;
 }
 
+export interface GComponentsOptions {
+    dir: string;
+}
+
 // eslint-disable-next-line no-shadow
 export enum ComponentType {
     BUTTON = 'BUTTON',
