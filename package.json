@@ -7,7 +7,9 @@
   "scripts": {
     "babelbuild": "npx babel --extensions .ts ./src -d ./dist --minified",
     "tscbuild": "tsc --emitDeclarationOnly",
-    "docsbuild": "typedoc --out docs src/index.ts"
+    "docs:devbuild": "docgen --source src --custom docs/index.yml --output docs/dev.json",
+    "docs:build": "docgen --source src --custom docs/index.yml --output docs/main.json",
+    "docs:test": "docgen --source src"
   },
   "keywords": [
     "handler",
@@ -30,6 +32,7 @@
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
+    "@discordjs/ts-docgen": "^0.3.2",
     "@types/node": "^16.10.3",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
@@ -37,7 +40,6 @@
     "babel-plugin-add-module-exports": "^1.0.4",
     "eslint": "^8.1.0",
     "glob": "^7.2.0",
-    "typedoc": "^0.22.7",
     "typescript": "^4.4.3"
   },
   "homepage": "https://garlic-team.github.io/GComponents"
