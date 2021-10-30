@@ -7,9 +7,8 @@
   "scripts": {
     "babelbuild": "npx babel --extensions .ts ./src -d ./dist --minified",
     "tscbuild": "tsc --emitDeclarationOnly",
-    "docs:devbuild": "ts-docgen --source src --custom docs/index.yml --output docs/dev.json",
-    "docs:build": "ts-docgen --source src --custom docs/index.yml --output docs/main.json",
-    "docs:test": "ts-docgen --source src"
+    "docs:devbuild": "node docs/build.js",
+    "docs:build": "node docs/dev-build.js"
   },
   "keywords": [
     "handler",
