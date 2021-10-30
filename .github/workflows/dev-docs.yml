@@ -1,8 +1,8 @@
-name: Build docs
+name: Build dev docs
 
 on:
   push:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       run: npm i @discordjs/ts-docgen
 
     - name: Build
-      run: npm run docs:build
+      run: npm run docs:devbuild
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
