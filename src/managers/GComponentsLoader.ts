@@ -42,8 +42,9 @@ export class GComponentsLoader {
                 if (!(file instanceof Component)) throw new GError('[COMPONENT]', `Component ${fileName} doesnt belong in components.`);
             }
 
-            file._path = `${dir}/${fileName}${fileType}`;
+            file.path = `${dir}/${fileName}${fileType}`;
 
+            if (this.components.has(file.name)) throw new GError('[COMPONENT]', `Duplicate component found: ${file.name}`);
             this.components.set(file.name, file);
             this.client.emit(Events.LOG, new Color(`&d[GComponents] &aLoaded (File): &e➜   &3${fileName}`).getText());
         }
