@@ -1243,38 +1243,18 @@
 					]
 				},
 				{
-					"id": 113,
-					"name": "_path",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/structures/Component.ts",
-							"line": 14,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
 					"id": 109,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isPublic": true
+						"isReadonly": true
 					},
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
 							"line": 10,
-							"character": 11
+							"character": 13
 						}
 					],
 					"type": {
@@ -1294,13 +1274,13 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isPublic": true
+						"isReadonly": true
 					},
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
 							"line": 11,
-							"character": 11
+							"character": 13
 						}
 					],
 					"type": {
@@ -1318,18 +1298,38 @@
 					}
 				},
 				{
+					"id": 113,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 14,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
 					"id": 111,
 					"name": "type",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isPublic": true
+						"isReadonly": true
 					},
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
 							"line": 12,
-							"character": 11
+							"character": 13
 						}
 					],
 					"type": {
@@ -1344,14 +1344,14 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isPublic": true,
-						"isOptional": true
+						"isOptional": true,
+						"isReadonly": true
 					},
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
 							"line": 13,
-							"character": 11
+							"character": 13
 						}
 					],
 					"type": {
@@ -1473,9 +1473,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						113,
 						109,
 						110,
+						113,
 						111,
 						112
 					]
