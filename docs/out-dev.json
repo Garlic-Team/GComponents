@@ -1293,6 +1293,22 @@
 							{
 								"type": "reference",
 								"name": "RegExp"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "reference",
+											"name": "RegExp"
+										}
+									]
+								}
 							}
 						]
 					}
