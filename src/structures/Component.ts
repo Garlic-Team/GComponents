@@ -6,9 +6,11 @@ import { GError } from '../structures/GError';
 
 import { ComponentType, ComponentOptions } from '../util/Constants';
 
+type Name = string | RegExp;
+
 export class Component {
     readonly client: Client;
-    readonly name: string | RegExp | Array<string | RegExp>;
+    readonly name: Name | Array<Name>;
     readonly type: ComponentType;
     readonly userRequiredPermissions?: Array<PermissionResolvable>;
     private path: string;
