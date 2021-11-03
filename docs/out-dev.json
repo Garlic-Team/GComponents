@@ -1193,7 +1193,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 16,
+							"line": 18,
 							"character": 4
 						}
 					],
@@ -1253,7 +1253,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 10,
+							"line": 12,
 							"character": 13
 						}
 					],
@@ -1279,7 +1279,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 11,
+							"line": 13,
 							"character": 13
 						}
 					],
@@ -1287,27 +1287,14 @@
 						"type": "union",
 						"types": [
 							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
 								"type": "reference",
-								"name": "RegExp"
+								"name": "Name"
 							},
 							{
 								"type": "array",
 								"elementType": {
-									"type": "union",
-									"types": [
-										{
-											"type": "intrinsic",
-											"name": "string"
-										},
-										{
-											"type": "reference",
-											"name": "RegExp"
-										}
-									]
+									"type": "reference",
+									"name": "Name"
 								}
 							}
 						]
@@ -1324,7 +1311,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 14,
+							"line": 16,
 							"character": 12
 						}
 					],
@@ -1344,7 +1331,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 12,
+							"line": 14,
 							"character": 13
 						}
 					],
@@ -1366,7 +1353,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 13,
+							"line": 15,
 							"character": 13
 						}
 					],
@@ -1389,7 +1376,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 26,
+							"line": 28,
 							"character": 11
 						}
 					],
@@ -1445,7 +1432,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 30,
+							"line": 32,
 							"character": 12
 						}
 					],
@@ -1508,7 +1495,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/Component.ts",
-					"line": 9,
+					"line": 11,
 					"character": 13
 				}
 			]
