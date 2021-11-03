@@ -44,8 +44,15 @@ export class GComponentsLoader {
 
             file.path = `${dir}/${fileName}${fileType}`;
 
-            if (this.components.has(file.name)) throw new GError('[COMPONENT]', `Duplicate component found: ${file.name}`);
-            this.components.set(file.name, file);
+            if (Array.isArray(file.name)) {
+                for (const name of file.name) {
+                    if (this.components.has(name)) throw new GError('[COMPONENT]', `Duplicate component found: ${name}`);
+                    this.components.set(name, file);
+                }
+            } else {
+                if (this.components.has(file.name)) throw new GError('[COMPONENT]', `Duplicate component found: ${file.name}`);
+                this.components.set(file.name, file);
+            }
             this.client.emit(Events.LOG, new Color(`&d[GComponents] &aLoaded (File): &e➜   &3${fileName}`).getText());
         }
     }

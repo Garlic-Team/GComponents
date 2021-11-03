@@ -8,7 +8,7 @@ import { ComponentType, ComponentOptions } from '../util/Constants';
 
 export class Component {
     readonly client: Client;
-    readonly name: string | RegExp;
+    readonly name: string | RegExp | Array<string | RegExp>;
     readonly type: ComponentType;
     readonly userRequiredPermissions?: Array<PermissionResolvable>;
     private path: string;
@@ -28,7 +28,7 @@ export class Component {
     }
 
     private validate(options: ComponentOptions) {
-        if (typeof options.name !== 'string' && !(options.name instanceof RegExp)) throw new GError(`[COMPONENT]`, `Name must be a string or RegExp`);
+        if (typeof options.name !== 'string' && !(options.name instanceof RegExp) && !Array.isArray(options.name)) throw new GError(`[COMPONENT]`, `Name must be a string, RegExp or array`);
         if (!ComponentType[options.type]) throw new GError(`[COMPONENT ${options.name}]`, `Type must be a valid ComponentType`);
     }
 }
