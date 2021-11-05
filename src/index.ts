@@ -1,7 +1,7 @@
 // Base
 export * from './base/GComponents';
 // Discord.js
-export { MessageActionRow as ActionRow, MessageButton as Button, MessageSelectMenu as SelectMenu } from 'discord.js';
+export { MessageActionRow, MessageButton, MessageSelectMenu } from 'discord.js';
 // Structures
 export * from './structures/Component';
 export * from './structures/CustomId';

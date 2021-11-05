@@ -1,10 +1,11 @@
 {
   "name": "@gcommands/components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Component handler for discord.js and gcommands",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "build": "bash build.bash",
     "babelbuild": "npx babel --extensions .ts ./src -d ./dist --minified",
     "tscbuild": "tsc --emitDeclarationOnly",
     "docs:build": "typedoc --json docs/out-main.json src/index.ts && node scripts/docs.mjs",

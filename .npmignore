@@ -1,6 +1,5 @@
 # ts
 babel.config.js
-build.js
 build.bash
 src/
 
@@ -15,3 +14,4 @@ src/
 # Docs
 docs/
 scripts/
+docs.yml

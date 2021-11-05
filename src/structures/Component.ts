@@ -6,12 +6,14 @@ import { GError } from '../structures/GError';
 
 import { ComponentType, ComponentOptions } from '../util/Constants';
 
+type Name = string | RegExp;
+
 export class Component {
-    public client: Client;
-    public name: string | RegExp;
-    public type: ComponentType;
-    public userRequiredPermissions?: Array<PermissionResolvable>;
-    private _path: string;
+    readonly client: Client;
+    readonly name: Name | Array<Name>;
+    readonly type: ComponentType;
+    readonly userRequiredPermissions?: Array<PermissionResolvable>;
+    private path: string;
 
     constructor(client: Client, options: ComponentOptions) {
         this.client = client;
@@ -28,7 +30,7 @@ export class Component {
     }
 
     private validate(options: ComponentOptions) {
-        if (typeof options.name !== 'string' && !(options.name instanceof RegExp)) throw new GError(`[COMPONENT]`,`Name must be a string or RegExp`);
-        if (!ComponentType[options.type]) throw new GError(`[COMPONENT ${options.name}]`,`Type must be a valid ComponentType`);
+        if (typeof options.name !== 'string' && !(options.name instanceof RegExp) && !Array.isArray(options.name)) throw new GError(`[COMPONENT]`, `Name must be a string, RegExp or array`);
+        if (!ComponentType[options.type]) throw new GError(`[COMPONENT ${options.name}]`, `Type must be a valid ComponentType`);
     }
 }
