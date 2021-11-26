@@ -20,7 +20,7 @@ export class GComponentHandler {
             if (!interaction || !interaction.isMessageComponent()) return;
 
             try {
-                const regex = new RegExp('[A-Za-z]+');
+                const regex = new RegExp('[A-Za-z1-9]+', 'g');
                 const args = interaction.customId.match(regex);
                 const name = args.shift();
 
