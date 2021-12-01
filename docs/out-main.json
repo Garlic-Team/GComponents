@@ -22,7 +22,7 @@
 					"sources": [
 						{
 							"fileName": "src/util/Constants.ts",
-							"line": 25,
+							"line": 26,
 							"character": 4
 						}
 					],
@@ -37,7 +37,7 @@
 					"sources": [
 						{
 							"fileName": "src/util/Constants.ts",
-							"line": 26,
+							"line": 27,
 							"character": 4
 						}
 					],
@@ -57,20 +57,20 @@
 			"sources": [
 				{
 					"fileName": "src/util/Constants.ts",
-					"line": 24,
+					"line": 25,
 					"character": 12
 				}
 			]
 		},
 		{
-			"id": 104,
+			"id": 112,
 			"name": "Component",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 105,
+					"id": 113,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -78,20 +78,20 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 18,
+							"line": 19,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 106,
+							"id": 114,
 							"name": "new Component",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 107,
+									"id": 115,
 									"name": "client",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -108,27 +108,28 @@
 									}
 								},
 								{
-									"id": 108,
+									"id": 116,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
+										"id": 96,
 										"name": "ComponentOptions"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 104,
+								"id": 112,
 								"name": "Component"
 							}
 						}
 					]
 				},
 				{
-					"id": 109,
+					"id": 117,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -154,7 +155,7 @@
 					}
 				},
 				{
-					"id": 110,
+					"id": 118,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -186,27 +187,73 @@
 					}
 				},
 				{
-					"id": 113,
-					"name": "path",
+					"id": 120,
+					"name": "run",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isPrivate": true
+						"isReadonly": true
 					},
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 16,
-							"character": 12
+							"line": 15,
+							"character": 13
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "string"
+						"type": "reflection",
+						"declaration": {
+							"id": 121,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 122,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 123,
+											"name": "interaction",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "MessageComponentInteraction"
+											}
+										},
+										{
+											"id": 124,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							]
+						}
 					}
 				},
 				{
-					"id": 111,
+					"id": 119,
 					"name": "type",
 					"kind": 1024,
 					"kindString": "Property",
@@ -227,7 +274,7 @@
 					}
 				},
 				{
-					"id": 112,
+					"id": 125,
 					"name": "userRequiredPermissions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -238,7 +285,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 15,
+							"line": 17,
 							"character": 13
 						}
 					],
@@ -251,63 +298,7 @@
 					}
 				},
 				{
-					"id": 114,
-					"name": "run",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/structures/Component.ts",
-							"line": 28,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 115,
-							"name": "run",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 116,
-									"name": "interaction",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "MessageComponentInteraction"
-									}
-								},
-								{
-									"id": 117,
-									"name": "args",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "string"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 118,
+					"id": 126,
 					"name": "validate",
 					"kind": 2048,
 					"kindString": "Method",
@@ -317,26 +308,27 @@
 					"sources": [
 						{
 							"fileName": "src/structures/Component.ts",
-							"line": 32,
+							"line": 30,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 119,
+							"id": 127,
 							"name": "validate",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 120,
+									"id": 128,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
+										"id": 96,
 										"name": "ComponentOptions"
 									}
 								}
@@ -354,26 +346,25 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						105
+						113
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						109,
-						110,
-						113,
-						111,
-						112
+						117,
+						118,
+						120,
+						119,
+						125
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						114,
-						118
+						126
 					]
 				}
 			],
@@ -386,14 +377,14 @@
 			]
 		},
 		{
-			"id": 121,
+			"id": 129,
 			"name": "CustomId",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 122,
+					"id": 130,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -407,14 +398,14 @@
 					],
 					"signatures": [
 						{
-							"id": 123,
+							"id": 131,
 							"name": "new CustomId",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 124,
+									"id": 132,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -422,14 +413,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 125,
+											"id": 133,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 127,
+													"id": 135,
 													"name": "ids",
 													"kind": 1024,
 													"kindString": "Property",
@@ -450,7 +441,7 @@
 													}
 												},
 												{
-													"id": 126,
+													"id": 134,
 													"name": "name",
 													"kind": 1024,
 													"kindString": "Property",
@@ -473,8 +464,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														127,
-														126
+														135,
+														134
 													]
 												}
 											]
@@ -484,14 +475,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 121,
+								"id": 129,
 								"name": "CustomId"
 							}
 						}
 					]
 				},
 				{
-					"id": 129,
+					"id": 137,
 					"name": "ids",
 					"kind": 1024,
 					"kindString": "Property",
@@ -514,7 +505,7 @@
 					}
 				},
 				{
-					"id": 128,
+					"id": 136,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -534,7 +525,7 @@
 					}
 				},
 				{
-					"id": 135,
+					"id": 143,
 					"name": "addId",
 					"kind": 2048,
 					"kindString": "Method",
@@ -542,20 +533,20 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 16,
+							"line": 19,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 136,
+							"id": 144,
 							"name": "addId",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 137,
+									"id": 145,
 									"name": "id",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -568,14 +559,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 121,
+								"id": 129,
 								"name": "CustomId"
 							}
 						}
 					]
 				},
 				{
-					"id": 138,
+					"id": 146,
 					"name": "addIds",
 					"kind": 2048,
 					"kindString": "Method",
@@ -583,20 +574,20 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 20,
+							"line": 24,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 139,
+							"id": 147,
 							"name": "addIds",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 140,
+									"id": 148,
 									"name": "ids",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -612,14 +603,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 121,
+								"id": 129,
 								"name": "CustomId"
 							}
 						}
 					]
 				},
 				{
-					"id": 130,
+					"id": 138,
 					"name": "get",
 					"kind": 2048,
 					"kindString": "Method",
@@ -627,13 +618,13 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 9,
+							"line": 10,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 131,
+							"id": 139,
 							"name": "get",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -646,7 +637,7 @@
 					]
 				},
 				{
-					"id": 132,
+					"id": 140,
 					"name": "setName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -654,20 +645,20 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 12,
+							"line": 14,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 133,
+							"id": 141,
 							"name": "setName",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 134,
+									"id": 142,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -680,7 +671,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 121,
+								"id": 129,
 								"name": "CustomId"
 							}
 						}
@@ -692,25 +683,25 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						122
+						130
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						129,
-						128
+						137,
+						136
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						135,
+						143,
+						146,
 						138,
-						130,
-						132
+						140
 					]
 				}
 			],
@@ -723,14 +714,14 @@
 			]
 		},
 		{
-			"id": 96,
+			"id": 104,
 			"name": "GComponents",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 97,
+					"id": 105,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -744,14 +735,14 @@
 					],
 					"signatures": [
 						{
-							"id": 98,
+							"id": 106,
 							"name": "new GComponents",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 99,
+									"id": 107,
 									"name": "client",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -768,7 +759,7 @@
 									}
 								},
 								{
-									"id": 100,
+									"id": 108,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -781,14 +772,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 96,
+								"id": 104,
 								"name": "GComponents"
 							}
 						}
 					]
 				},
 				{
-					"id": 101,
+					"id": 109,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -814,7 +805,7 @@
 					}
 				},
 				{
-					"id": 103,
+					"id": 111,
 					"name": "components",
 					"kind": 1024,
 					"kindString": "Property",
@@ -837,7 +828,7 @@
 							},
 							{
 								"type": "reference",
-								"id": 104,
+								"id": 112,
 								"name": "Component"
 							}
 						],
@@ -845,7 +836,7 @@
 					}
 				},
 				{
-					"id": 102,
+					"id": 110,
 					"name": "dir",
 					"kind": 1024,
 					"kindString": "Property",
@@ -870,16 +861,16 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						97
+						105
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						101,
-						103,
-						102
+						109,
+						111,
+						110
 					]
 				}
 			],
@@ -2787,6 +2778,180 @@
 					"name": "BaseMessageComponent"
 				}
 			]
+		},
+		{
+			"id": 96,
+			"name": "ComponentOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 97,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "reference",
+								"name": "RegExp"
+							}
+						]
+					}
+				},
+				{
+					"id": 98,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 15,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "BUTTON"
+							},
+							{
+								"type": "literal",
+								"value": "SELECT_MENU"
+							}
+						]
+					}
+				},
+				{
+					"id": 99,
+					"name": "userRequiredPermissions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 16,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "PermissionResolvable"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "PermissionResolvable"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 100,
+					"name": "run",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 17,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 101,
+							"name": "run",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 102,
+									"name": "interaction",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MessageComponentInteraction"
+									}
+								},
+								{
+									"id": 103,
+									"name": "args",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						97,
+						98,
+						99
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						100
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/util/Constants.ts",
+					"line": 13,
+					"character": 17
+				}
+			]
 		}
 	],
 	"groups": [
@@ -2801,12 +2966,19 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
+				112,
+				129,
 				104,
-				121,
-				96,
 				1,
 				20,
 				54
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				96
 			]
 		}
 	],
