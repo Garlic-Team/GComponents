@@ -14,7 +14,7 @@ export interface ComponentOptions {
     name: string | RegExp;
     type: 'BUTTON' | 'SELECT_MENU';
     userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable>;
-    run: (interaction: MessageComponentInteraction, args: Array<string>) => unknown;
+    run?: (interaction: MessageComponentInteraction, args: Array<string>) => unknown;
 }
 
 export interface GComponentsOptions {
