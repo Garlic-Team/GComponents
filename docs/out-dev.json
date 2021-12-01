@@ -542,7 +542,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 16,
+							"line": 19,
 							"character": 4
 						}
 					],
@@ -583,7 +583,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 20,
+							"line": 24,
 							"character": 4
 						}
 					],
@@ -627,7 +627,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 9,
+							"line": 10,
 							"character": 4
 						}
 					],
@@ -654,7 +654,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/CustomId.ts",
-							"line": 12,
+							"line": 14,
 							"character": 4
 						}
 					],
