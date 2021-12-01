@@ -7,6 +7,9 @@ src/
 .eslintrc.json
 .eslintignore
 
+# NPM
+package-lock.json
+
 # git
 .gitignore
 .github

@@ -1,6 +1,6 @@
 import { Client, Collection } from 'discord.js';
 
-import { Events, ComponentType } from '../util/Constants';
+import { ComponentType, Events } from '../util/Constants';
 
 import { Component } from '../structures/Component';
 
@@ -20,7 +20,7 @@ export class GComponentHandler {
             if (!interaction || !interaction.isMessageComponent()) return;
 
             try {
-                const regex = new RegExp('[A-Za-z1-9]+', 'g');
+                const regex = new RegExp('[A-Za-z0-9]+', 'gd');
                 const args = interaction.customId.match(regex);
                 const name = args.shift();
 
@@ -37,7 +37,9 @@ export class GComponentHandler {
                 if (component.userRequiredPermissions[0] && !interaction.memberPermissions.has(component.userRequiredPermissions)) return interaction.deferReply();
 
                 await component.run(interaction, args);
-            } catch (e) { this.client.emit(Events.DEBUG, e); }
-     });
+            } catch (e) {
+                this.client.emit(Events.DEBUG, e);
+            }
+        });
     }
 }
