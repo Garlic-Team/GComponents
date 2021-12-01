@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { PermissionResolvable } from 'discord.js';
+import { MessageComponentInteraction, PermissionResolvable } from 'discord.js';
 
 export const Events = {
     DEBUG: 'debug',
@@ -13,7 +13,8 @@ export const Events = {
 export interface ComponentOptions {
     name: string | RegExp;
     type: 'BUTTON' | 'SELECT_MENU';
-    userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable> ;
+    userRequiredPermissions?: PermissionResolvable | Array<PermissionResolvable>;
+    run: (interaction: MessageComponentInteraction, args: Array<string>) => unknown;
 }
 
 export interface GComponentsOptions {

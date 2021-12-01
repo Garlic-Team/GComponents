@@ -10,8 +10,8 @@ import { Events } from '../util/Constants';
 import { isClass } from '../util/util';
 
 export class GComponentsLoader {
-    private client: Client;
-    private dir: string;
+    private readonly client: Client;
+    private readonly dir: string;
     private components: Collection<string, Component>;
 
     constructor(client: Client, components: Collection<string, Component>, dir: string) {
@@ -31,7 +31,9 @@ export class GComponentsLoader {
             if (fsDirent.isDirectory()) {
                 await this.__loadFiles(path.join(dir, rawFileName));
                 continue;
-            } else if (!['.js', '.ts'].includes(fileType)) { continue; }
+            } else if (!['.js', '.ts'].includes(fileType)) {
+                continue;
+            }
 
             let file = await import(path.join(dir, rawFileName));
             if (file.default) file = file.default;
@@ -40,9 +42,13 @@ export class GComponentsLoader {
             if (isClass(file)) {
                 file = new file(this.client);
                 if (!(file instanceof Component)) throw new GError('[COMPONENT]', `Component ${fileName} doesnt belong in components.`);
+            } else if (typeof file === 'object') {
+                try {
+                    file = new Component(this.client, file);
+                } catch {
+                    throw new GError('[COMPONENT]', `Component ${fileName} doesnt belong in components.`);
+                }
             }
-
-            file.path = `${dir}/${fileName}${fileType}`;
 
             if (Array.isArray(file.name)) {
                 for (const name of file.name) {

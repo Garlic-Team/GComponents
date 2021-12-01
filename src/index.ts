@@ -7,4 +7,4 @@ export * from './structures/Component';
 export * from './structures/CustomId';
 
 // Constants
-export { ComponentType } from './util/Constants';
+export { ComponentType, ComponentOptions } from './util/Constants';
