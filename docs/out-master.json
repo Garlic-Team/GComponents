@@ -1,0 +1,2992 @@
+{
+	"id": 0,
+	"name": "@gcommands/components",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 93,
+			"name": "ComponentType",
+			"kind": 8,
+			"kindString": "Enumeration",
+			"flags": {},
+			"children": [
+				{
+					"id": 94,
+					"name": "BUTTON",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 26,
+							"character": 4
+						}
+					],
+					"defaultValue": "\"BUTTON\""
+				},
+				{
+					"id": 95,
+					"name": "SELECT_MENU",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 27,
+							"character": 4
+						}
+					],
+					"defaultValue": "\"SELECT_MENU\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration members",
+					"kind": 16,
+					"children": [
+						94,
+						95
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/util/Constants.ts",
+					"line": 25,
+					"character": 12
+				}
+			]
+		},
+		{
+			"id": 112,
+			"name": "Component",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 113,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 19,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 114,
+							"name": "new Component",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 115,
+									"name": "client",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										],
+										"name": "Client"
+									}
+								},
+								{
+									"id": 116,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 96,
+										"name": "ComponentOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 112,
+								"name": "Component"
+							}
+						}
+					]
+				},
+				{
+					"id": 117,
+					"name": "client",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 12,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						],
+						"name": "Client"
+					}
+				},
+				{
+					"id": 118,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 13,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "Name"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Name"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 120,
+					"name": "run",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 15,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 121,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 122,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 123,
+											"name": "interaction",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "MessageComponentInteraction"
+											}
+										},
+										{
+											"id": 124,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 119,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 14,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 93,
+						"name": "ComponentType"
+					}
+				},
+				{
+					"id": 125,
+					"name": "userRequiredPermissions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 17,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "PermissionResolvable"
+						}
+					}
+				},
+				{
+					"id": 126,
+					"name": "validate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/Component.ts",
+							"line": 30,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 127,
+							"name": "validate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 128,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 96,
+										"name": "ComponentOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						113
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						117,
+						118,
+						120,
+						119,
+						125
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						126
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/structures/Component.ts",
+					"line": 11,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 129,
+			"name": "CustomId",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 130,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 5,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 131,
+							"name": "new CustomId",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 132,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 133,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 135,
+													"name": "ids",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/structures/CustomId.ts",
+															"line": 5,
+															"character": 41
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													}
+												},
+												{
+													"id": 134,
+													"name": "name",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/structures/CustomId.ts",
+															"line": 5,
+															"character": 27
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														135,
+														134
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 129,
+								"name": "CustomId"
+							}
+						}
+					]
+				},
+				{
+					"id": 137,
+					"name": "ids",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 3,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 136,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 2,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 143,
+					"name": "addId",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 19,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 144,
+							"name": "addId",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 145,
+									"name": "id",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 129,
+								"name": "CustomId"
+							}
+						}
+					]
+				},
+				{
+					"id": 146,
+					"name": "addIds",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 24,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 147,
+							"name": "addIds",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 148,
+									"name": "ids",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 129,
+								"name": "CustomId"
+							}
+						}
+					]
+				},
+				{
+					"id": 138,
+					"name": "get",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 10,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 139,
+							"name": "get",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				},
+				{
+					"id": 140,
+					"name": "setName",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/structures/CustomId.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 141,
+							"name": "setName",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 142,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 129,
+								"name": "CustomId"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						130
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						137,
+						136
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						143,
+						146,
+						138,
+						140
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/structures/CustomId.ts",
+					"line": 1,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 104,
+			"name": "GComponents",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 105,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/base/GComponents.ts",
+							"line": 15,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 106,
+							"name": "new GComponents",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 107,
+									"name": "client",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										],
+										"name": "Client"
+									}
+								},
+								{
+									"id": 108,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "GComponentsOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 104,
+								"name": "GComponents"
+							}
+						}
+					]
+				},
+				{
+					"id": 109,
+					"name": "client",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/base/GComponents.ts",
+							"line": 11,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						],
+						"name": "Client"
+					}
+				},
+				{
+					"id": 111,
+					"name": "components",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/base/GComponents.ts",
+							"line": 13,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "reference",
+								"id": 112,
+								"name": "Component"
+							}
+						],
+						"name": "Collection"
+					}
+				},
+				{
+					"id": 110,
+					"name": "dir",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/base/GComponents.ts",
+							"line": 12,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						105
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						109,
+						111,
+						110
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/base/GComponents.ts",
+					"line": 10,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "MessageActionRow",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1340,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "new MessageActionRow",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 4,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"id": 1,
+												"name": "MessageActionRow"
+											},
+											{
+												"type": "reference",
+												"name": "MessageActionRowOptions"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "MessageActionRow"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "BaseMessageComponent.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.constructor"
+					}
+				},
+				{
+					"id": 6,
+					"name": "components",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1342,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "MessageActionRowComponent"
+						}
+					}
+				},
+				{
+					"id": 5,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1341,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "ACTION_ROW"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.type"
+					}
+				},
+				{
+					"id": 7,
+					"name": "addComponents",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1343,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 8,
+							"name": "addComponents",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 9,
+									"name": "components",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageActionRowComponentResolvable"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageActionRowComponentResolvable"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "MessageActionRow"
+							}
+						}
+					]
+				},
+				{
+					"id": 10,
+					"name": "setComponents",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1346,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 11,
+							"name": "setComponents",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 12,
+									"name": "components",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageActionRowComponentResolvable"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageActionRowComponentResolvable"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "MessageActionRow"
+							}
+						}
+					]
+				},
+				{
+					"id": 13,
+					"name": "spliceComponents",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1349,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 14,
+							"name": "spliceComponents",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 15,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 16,
+									"name": "deleteCount",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 17,
+									"name": "components",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageActionRowComponentResolvable"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageActionRowComponentResolvable"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "MessageActionRow"
+							}
+						}
+					]
+				},
+				{
+					"id": 18,
+					"name": "toJSON",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1354,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 19,
+							"name": "toJSON",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						6,
+						5
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						7,
+						10,
+						13,
+						18
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/discord.js/typings/index.d.ts",
+					"line": 1339,
+					"character": 13
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "BaseMessageComponent"
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "MessageButton",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 24,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1378,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 25,
+							"name": "new MessageButton",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 26,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"id": 20,
+												"name": "MessageButton"
+											},
+											{
+												"type": "reference",
+												"name": "MessageButtonOptions"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "BaseMessageComponent.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.constructor"
+					}
+				},
+				{
+					"id": 27,
+					"name": "customId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1379,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 28,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1380,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 29,
+					"name": "emoji",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1381,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "APIPartialEmoji"
+					}
+				},
+				{
+					"id": 30,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1382,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 31,
+					"name": "style",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1383,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "PRIMARY"
+							},
+							{
+								"type": "literal",
+								"value": "SECONDARY"
+							},
+							{
+								"type": "literal",
+								"value": "SUCCESS"
+							},
+							{
+								"type": "literal",
+								"value": "DANGER"
+							},
+							{
+								"type": "literal",
+								"value": "LINK"
+							}
+						]
+					}
+				},
+				{
+					"id": 32,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1384,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "BUTTON"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.type"
+					}
+				},
+				{
+					"id": 33,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1385,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 34,
+					"name": "setCustomId",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1386,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 35,
+							"name": "setCustomId",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 36,
+									"name": "customId",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 37,
+					"name": "setDisabled",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1387,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 38,
+							"name": "setDisabled",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 39,
+									"name": "disabled",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "setEmoji",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1388,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 41,
+							"name": "setEmoji",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 42,
+									"name": "emoji",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "EmojiIdentifierResolvable"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 43,
+					"name": "setLabel",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1389,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 44,
+							"name": "setLabel",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 45,
+									"name": "label",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 46,
+					"name": "setStyle",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1390,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 47,
+							"name": "setStyle",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 48,
+									"name": "style",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "MessageButtonStyleResolvable"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 49,
+					"name": "setURL",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1391,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 50,
+							"name": "setURL",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 51,
+									"name": "url",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "MessageButton"
+							}
+						}
+					]
+				},
+				{
+					"id": 52,
+					"name": "toJSON",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1392,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 53,
+							"name": "toJSON",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				},
+				{
+					"id": 21,
+					"name": "resolveStyle",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true,
+						"isStatic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1393,
+							"character": 17
+						}
+					],
+					"signatures": [
+						{
+							"id": 22,
+							"name": "resolveStyle",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 23,
+									"name": "style",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "MessageButtonStyleResolvable"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "PRIMARY"
+									},
+									{
+										"type": "literal",
+										"value": "SECONDARY"
+									},
+									{
+										"type": "literal",
+										"value": "SUCCESS"
+									},
+									{
+										"type": "literal",
+										"value": "DANGER"
+									},
+									{
+										"type": "literal",
+										"value": "LINK"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						24
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						34,
+						37,
+						40,
+						43,
+						46,
+						49,
+						52,
+						21
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/discord.js/typings/index.d.ts",
+					"line": 1377,
+					"character": 13
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "BaseMessageComponent"
+				}
+			]
+		},
+		{
+			"id": 54,
+			"name": "MessageSelectMenu",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExternal": true
+			},
+			"children": [
+				{
+					"id": 55,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1554,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 56,
+							"name": "new MessageSelectMenu",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 57,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"id": 54,
+												"name": "MessageSelectMenu"
+											},
+											{
+												"type": "reference",
+												"name": "MessageSelectMenuOptions"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "BaseMessageComponent.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.constructor"
+					}
+				},
+				{
+					"id": 58,
+					"name": "customId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1555,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 59,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1556,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 60,
+					"name": "maxValues",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1557,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 61,
+					"name": "minValues",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1558,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 62,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1559,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "MessageSelectOption"
+						}
+					}
+				},
+				{
+					"id": 63,
+					"name": "placeholder",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1560,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 64,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1561,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "SELECT_MENU"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BaseMessageComponent.type"
+					}
+				},
+				{
+					"id": 65,
+					"name": "addOptions",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1562,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 66,
+							"name": "addOptions",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 67,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageSelectOptionData"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageSelectOptionData"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 71,
+					"name": "setCustomId",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1564,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 72,
+							"name": "setCustomId",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 73,
+									"name": "customId",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "setDisabled",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1565,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 75,
+							"name": "setDisabled",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 76,
+									"name": "disabled",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 77,
+					"name": "setMaxValues",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1566,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 78,
+							"name": "setMaxValues",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 79,
+									"name": "maxValues",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 80,
+					"name": "setMinValues",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1567,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 81,
+							"name": "setMinValues",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 82,
+									"name": "minValues",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 68,
+					"name": "setOptions",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1563,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 69,
+							"name": "setOptions",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 70,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageSelectOptionData"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageSelectOptionData"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 83,
+					"name": "setPlaceholder",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1568,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 84,
+							"name": "setPlaceholder",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 85,
+									"name": "placeholder",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 86,
+					"name": "spliceOptions",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1569,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 87,
+							"name": "spliceOptions",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"parameters": [
+								{
+									"id": 88,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 89,
+									"name": "deleteCount",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 90,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "MessageSelectOptionData"
+												}
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "MessageSelectOptionData"
+													}
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "MessageSelectMenu"
+							}
+						}
+					]
+				},
+				{
+					"id": 91,
+					"name": "toJSON",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/discord.js/typings/index.d.ts",
+							"line": 1574,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 92,
+							"name": "toJSON",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						55
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						65,
+						71,
+						74,
+						77,
+						80,
+						68,
+						83,
+						86,
+						91
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node_modules/discord.js/typings/index.d.ts",
+					"line": 1553,
+					"character": 13
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "BaseMessageComponent"
+				}
+			]
+		},
+		{
+			"id": 96,
+			"name": "ComponentOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 97,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "reference",
+								"name": "RegExp"
+							}
+						]
+					}
+				},
+				{
+					"id": 98,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 15,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "BUTTON"
+							},
+							{
+								"type": "literal",
+								"value": "SELECT_MENU"
+							}
+						]
+					}
+				},
+				{
+					"id": 99,
+					"name": "userRequiredPermissions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 16,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "PermissionResolvable"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "PermissionResolvable"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 100,
+					"name": "run",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/util/Constants.ts",
+							"line": 17,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 101,
+							"name": "run",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 102,
+									"name": "interaction",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MessageComponentInteraction"
+									}
+								},
+								{
+									"id": 103,
+									"name": "args",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						97,
+						98,
+						99
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						100
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/util/Constants.ts",
+					"line": 13,
+					"character": 17
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Enumerations",
+			"kind": 8,
+			"children": [
+				93
+			]
+		},
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				112,
+				129,
+				104,
+				1,
+				20,
+				54
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				96
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "src/index.ts",
+			"line": 2,
+			"character": 0
+		}
+	]
+}
