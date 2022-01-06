@@ -8,9 +8,7 @@
   </p>
 </div>
 
----
-
-# OFFICIAL ADDON FOR [GCOMMANDS](https://www.npmjs.com/package/gcommands)
+# Deprecated, use [GCommands](https://github.com/Garlic-Team/GCommands)
 
 ## Installation
 
